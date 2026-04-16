@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rodent Pest Control | Incognito</title>
+  <link rel="icon" type="image/png" href="../assets/incog_logo.png">
+  <link rel="stylesheet" href="../styles.css">
+
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+  <img src="../assets/incog_logo.png" alt="Incognito Pest Control Logo">
+  </div>
+
+  <!-- Global background -->
+  <div class="global-fluid-bg"></div>
+  
+  <header class="service-hero">
+    <a href="../index.html">
+    <img src="../assets/incog_logo.png" alt="Incognito Pest Control Logo" class="site-logo">
+    </a>
+    <h1>Rodent Pest Control</h1>
+    <p class="service-subtitle">
+      Safe & effective protection against rodents
+    </p>
+  </header>
+
+  <section class="service-section">
+    	<div class="service-image">
+            <img src="../assets/rod_2.jpg" alt="Rodent">
+      </div>
+    <div class="service-text">
+    <h2>Solution to Your Problem</h2>
+    <p class="service-description">
+      Rats and mice are more than a nuisance—they pose serious health, safety, and property risks. 
+      Our rodent control solutions eliminate infestations fast and keep rodents from coming back.
+    </p>
+
+    <h2>Fast & Effective Rodent Elimination</h2>
+    <p class="service-description">
+      We target rodents at the source using proven trapping, baiting, 
+      and exclusion methods to quickly eliminate active infestations.
+    </p>
+
+    <h2>Protect Your Health & Property</h2>
+    <p class="service-description">
+      Rodents carry diseases, contaminate food, and damage wiring and structures. 
+      Our comprehensive approach ensures your space stays safe, clean, and rodent-free.
+    </p>
+    </div>
+  </section>
+
+  <section class="service-section">
+    	<div class="service-image">
+            <img src="../assets/rod_1.jpg" alt="Rodent">
+      </div>
+    <div class="service-text">
+    <h2>Prevention That Seals Them Out</h2>
+    <p class="service-description">
+      Eliminating rodents isn’t enough. 
+      We identify entry points and nesting areas, 
+      then implement rodent-proofing measures to stop reinfestation.
+    </p>
+
+    <h2>Safe & Controlled Treatments</h2>
+    <p class="service-description">
+      Our rodent control methods are carefully managed 
+      and safe for households, pets, and commercial environments when applied correctly.
+    </p>
+    </div>
+  </section>
+
+    <section class="services-section">
+      <h2>
+      Why Our Rodent Control Works
+    </h2>
+      <div class="benefits">
+        <div class="benefit-item">
+          <img src="../assets/icon-fast.png" alt="fam">
+          <h4>Rapid response and effective elimination</h4>
+        </div>
+      
+        <div class="benefit-item">
+          <img src="../assets/icon-sani.png" alt="fam">
+          <h4>Disease prevention and sanitation support</h4>
+        </div>
+  
+        <div class="benefit-item">
+          <img src="../assets/icon-seal.png" alt="fam">
+          <h4>Entry-point sealing and prevention</h4>
+        </div>
+  
+        <div class="benefit-item">
+          <img src="../assets/icon-protect.png" alt="fam">
+          <h4>Safe and monitored treatment methods</h4>
+        </div>
+  
+        <div class="benefit-item">
+          <img src="../assets/icon-time.png" alt="fam">
+          <h4>Reliable follow-up services</h4>
+        </div>
+      </div>
+    </section>
+    
+  <section class="service-content">
+    <h1>Take Action Before Rodents Multiply</h1>
+    <p class="service-description">
+      Rodent problems escalate fast. 
+      Schedule a rodent inspection today and reclaim your space from unwanted pests.
+    </p>
+    
+
+    <a href="../index.html" class="back-btn">← Back to Home</a>
+  </section>
+  
+  <div class="quote-bar">
+      <a href="../index.html#contact" class="quote-btn">Get a FREE Quote</a>
+  </div>
+
+  <script>
+  const loader = document.getElementById("loader");
+
+  // Hide loader when page fully loads
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      loader.classList.add("hide");
+    }, 400);
+  });
+
+  // Show loader on internal link click
+  document.querySelectorAll("a[href]").forEach(link => {
+    link.addEventListener("click", e => {
+      const url = link.getAttribute("href");
+
+      // Ignore external links, anchors, new tabs
+      if (
+        url.startsWith("http") ||
+        url.startsWith("#") ||
+        link.target === "_blank"
+      ) return;
+
+      e.preventDefault();
+      loader.classList.remove("hide");
+
+      setTimeout(() => {
+        window.location.href = url;
+      }, 300);
+    });
+  });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Termite Pest Control | Incognito</title>
+  <link rel="icon" type="image/png" href="../assets/incog_logo.png">
+  <link rel="stylesheet" href="../styles.css">
+  
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+  <img src="../assets/incog_logo.png" alt="Incognito Pest Control Logo">
+  </div>
+
+  <!-- Global background -->
+  <div class="global-fluid-bg"></div>
+  
+  <header class="service-hero">
+    <a href="../index.html">
+    <img src="../assets/incog_logo.png" alt="Incognito Pest Control Logo" class="site-logo">
+    </a>
+    <h1>Termite Pest Control</h1>
+    <p class="service-subtitle">
+      Safe & effective protection for your home or business
+    </p>
+  </header>
+
+  <section class="service-section">
+    	<div class="service-image">
+            <img src="../assets/term_1.jpg" alt="Termite">
+      </div>
+    <div class="service-text">
+    <h2>Prevention is Key</h2>
+    <p class="service-description">
+      Stop termites before they destroy your property. 
+      Our advanced termite control solutions provide powerful protection, long-term prevention, 
+      and total peace of mind for homeowners and businesses.
+    </p>
+
+    <h2>Eliminate Termites at the Source</h2>
+    <p class="service-description">
+      Termites work silently—often causing damage before you even notice. 
+      Our proven termite treatments target colonies at the source, 
+      stopping active infestations and preventing further destruction.
+    </p>
+    </div>
+  </section>
+  
+  <section class="service-section">
+    	<div class="service-image">
+            <img src="../assets/term_2.jpg" alt="Termite">
+      </div>
+    <div class="service-text">
+    <h2>Safe, Effective & Long-Lasting Protection</h2>
+    <p class="service-description">
+      We use industry-approved termite treatments that are highly effective 
+      while remaining safe for families, pets, and occupants when applied by professionals.
+    </p>
+
+    <h2>Prevent Costly Structural Damage</h2>
+    <p class="service-description">
+      Termite damage can be expensive and irreversible. 
+      Our preventive treatments create a protective barrier around your property,
+      stopping termites before they can invade.
+    </p>
+
+    <h2>Complete Inspection & Customized Treatment</h2>
+    <p class="service-description">
+      We conduct thorough inspections to assess risk areas 
+      and recommend the right termite solution—whether it’s pre-construction, 
+      post-construction, or corrective treatment.
+    </p>
+    </div>
+  </section>
+    
+    <section class="services-section">
+      <div class="benefits">
+        <div class="benefit-item">
+          <img src="../assets/icon-adv.png" alt="fam">
+          <h4>Advanced termite detection and treatment</h4>
+        </div>
+      
+        <div class="benefit-item">
+          <img src="../assets/icon-time.png" alt="fam">
+          <h4>Long-term protection and prevention</h4>
+        </div>
+  
+        <div class="benefit-item">
+          <img src="../assets/icon-serv.png" alt="fam">
+          <h4>Safe and proven treatment methods</h4>
+        </div>
+  
+        <div class="benefit-item">
+          <img src="../assets/icon-exp.png" alt="fam">
+          <h4>Experienced termite specialists</h4>
+        </div>
+  
+        <div class="benefit-item">
+          <img src="../assets/icon-prop.png" alt="fam">
+          <h4>Protects your property investment</h4>
+        </div>
+      </div>
+    </section>
+
+  <section class="service-content">
+    <h1>Don’t Wait Until It’s Too Late</h1>
+    <p class="service-description">
+      Termites won’t stop on their own. 
+      Book a termite inspection today and safeguard your home or business from hidden damage.
+    </p>
+    
+    <a href="../index.html" class="back-btn">← Back to Home</a>
+  </section>
+
+  <div class="quote-bar">
+    <a href="../index.html#contact" class="quote-btn">Get a FREE Quote</a>
+  </div>
+
+  <script>
+  const loader = document.getElementById("loader");
+
+  // Hide loader when page fully loads
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      loader.classList.add("hide");
+    }, 400);
+  });
+
+  // Show loader on internal link click
+  document.querySelectorAll("a[href]").forEach(link => {
+    link.addEventListener("click", e => {
+      const url = link.getAttribute("href");
+
+      // Ignore external links, anchors, new tabs
+      if (
+        url.startsWith("http") ||
+        url.startsWith("#") ||
+        link.target === "_blank"
+      ) return;
+
+      e.preventDefault();
+      loader.classList.remove("hide");
+
+      setTimeout(() => {
+        window.location.href = url;
+      }, 300);
+    });
+  });
+  </script>
+
+  
+</body>
+</html>
