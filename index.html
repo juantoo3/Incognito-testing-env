@@ -3,127 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Incognito Pest Control provides safe and effective residential and commercial pest control services. Protect your home or business from ants, rodents, termites, and more.">
-  <title>Incognito Pest Control Services</title>
-  <link rel="icon" type="image/png" href="assets/incog_logo.png">
-  <link rel="stylesheet" href="styles.css">
-
+  <title>Incognito Pest Control</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- LOADER -->
-  <div id="loader">
-    <img src="assets/incog_logo.png" alt="Incognito Pest Control Logo">
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <img src="assets/incog_logo.png" class="logo">
+
+    <ul class="nav-links">
+      <li>Home</li>
+      <li>Services</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+
+    <a class="btn-nav">Get Quote</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Incognito Pest Control</h1>
+    <p class="subtitle">A Low Profile But Enviable in Service</p>
+    <p class="desc">Discreet. Effective. Trusted Pest Control.</p>
+
+    <div class="hero-buttons">
+      <a class="btn-primary">Request Inspection</a>
+      <a class="btn-secondary">Learn More</a>
+    </div>
   </div>
 
-  <!-- Background -->
-  <div class="global-fluid-bg"></div>
-  
-  <!-- Navigation -->
-  <nav id="mainNav" class="navbar">
-    <div class="nav-container">
-  
-      <a href="index.html" class="nav-logo">
-        <img src="assets/incog_logo.png" alt="Incognito Pest Control">
-      </a>
-  
-      <!-- Mobile Menu Button -->
-      <div class="menu-toggle" id="menuToggle">
-        ☰
-      </div>
-  
-      <ul class="nav-links" id="navLinks">
-        <li><a href="/about.html">About</a></li>
-  
-        <li class="dropdown">
-          <a href="javascript:void(0)">Services ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="services/residential.html">Residential</a></li>
-            <li><a href="services/commercial.html">Commercial</a></li>
-            <li><a href="services/rodent.html">Rodent</a></li>
-            <li><a href="services/termite.html">Termite</a></li>
-          </ul>
-        </li>
-  
-        <li><a class="cta-btn" href="#contact">Get a free Quote</a></li>
+  <div class="hero-image">
+    <img src="assets/incog_logo.png">
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <h2>Our Services</h2>
+  <p class="section-sub">Effective & Discreet</p>
+
+  <div class="service-grid">
+    <div class="card">General Pest Control</div>
+    <div class="card">Rodent Control</div>
+    <div class="card">Mosquito Treatment</div>
+    <div class="card">Commercial Solutions</div>
+  </div>
+</section>
+
+<!-- ABOUT + WHY -->
+<section class="about">
+  <div class="about-grid">
+
+    <div>
+      <h3>Why Choose Us</h3>
+      <ul class="checklist">
+        <li>Discreet Operations</li>
+        <li>Certified Professionals</li>
+        <li>Eco-Friendly Solutions</li>
+        <li>Fast Response Time</li>
       </ul>
-  
     </div>
-  </nav>
-  
-   <!-- HEADER -->
-  <header class="header-hero">
-    <img src="assets/incog_logo.png" alt="Incognito Pest Control" class="site-logo">
-    <h1>Incognito Pest Control Services</h1>
-    <p class="service-description">A Low Profile But Enviable In Service</p>
-  </header>
 
-  <!-- SERVICES -->
-  <section class="service-content">
-  <p class="service-description">
-    We offer a <strong>FREE</strong> Integrated Pest Management (IPM) seminar designed to help our clients achieve <span class="highlight">long-term, effective pest control—safely and responsibly.</span><br>
-    IPM focuses on controlling pest populations while minimizing risk to people, pets, and the environment.
-  </p>
-
-  <img src="assets/seminar2.jpg" alt="IPM Seminar" class="ipm-img">
-    
-  <p class="service-description">
-    Instead of relying solely on chemicals, IPM uses sanitation practices,
-    monitoring systems, structural improvements, and targeted treatments.
-  </p>
-
-  <img src="assets/seminar4.jpg" alt="IPM Seminar" class="ipm-img">
-    
-  <a class="cta-btn" href="about.html#IPM">More about IPM</a>
-    
-  </section>
-  
-   <!-- SERVICES -->
-  <section class="services-section">
-    <div class="services-title">Our Services</div>
-
-    <div class="services-grid">
-
-      <a href="services/residential.html" class="service-link">
-        <div class="service-card front-residential">
-        	<h3 class="service-title">Residential Pest Control</h3>
-          <div class="service-overlay"></div>
-        </div>
-      </a>
-
-      <a href="services/commercial.html" class="service-link">
-        <div class="service-card front-commercial">
-            <h3 class="service-title">Commercial Pest Control</h3>
-          <div class="service-overlay"></div>
-        </div>
-      </a>
-
-      <a href="services/rodent.html" class="service-link">
-        <div class="service-card front-rodent">
-            <h3 class="service-title">Rodent Control</h3>
-          <div class="service-overlay"></div>
-        </div>
-      </a>
-
-      <a href="services/termite.html" class="service-link">
-        <div class="service-card front-termite">
-            <h3 class="service-title">Termite Control</h3>
-          <div class="service-overlay"></div>
-        </div>
-      </a>
-      
-      <a href="about.html#pests" class="service-link">
-        <div class="service-card front-general">
-            <h3 class="service-title">General Pest Control</h3>
-          <div class="service-overlay"></div>
-        </div>
-      </a>
-
+    <div>
+      <h3>About Incognito Pest Control</h3>
+      <p>
+        We provide safe, discreet, and effective pest control solutions
+        designed for long-term protection and peace of mind.
+      </p>
+      <a class="btn-primary">Read More</a>
     </div>
-  </section>
 
-  <!-- CLIENTS -->
+  </div>
+</section>
+
+<!-- CLIENTS -->
   <section class="clients-section">
   <h2 class="clients-title">Our Awards and Certifications</h2>
 
@@ -150,44 +109,31 @@
   </div>
     <a class="cta-btn" href="about.html#certification">See more of our Certifications</a>
   </section>
-
-  <section id="contact" class="contact-section">
-    <h2>Contact Us</h2>
-
-    <div class="contact-wrapper">
-
-      <div class="contact-info-box">
-        <p><strong>📍 Address</strong><br> 97C Pinpin St., Palma, Baguio City, Philippines</p>
-        <p><strong>📞 Phone</strong><br> Smart: 0919 000 7798 | Globe: 0917 301 6901 | Landline: (074) 620 5391</p>
-        <p><strong>📧 Email</strong><br> incognitoindustrial@gmail.com</p>
-      </div>
-      
-      <form 
-        class="contact-form" 
-        action="https://formspree.io/f/mykdqgyb" 
-        method="POST"
-        >  <!-- Formspree -->
-        
-        <label>
-          <input type="text" name="name" placeholder="Full Name" required>
-        </label>
-        <label>
-          <input type="email" name="email" placeholder="Email Address" required>
-        </label>
-        <label>
-          <textarea name="message" rows="4" placeholder="'I would like to get a quote'" required></textarea>
-        </label>
-        
-        <button type="submit" class="send-btn">Send Message</button>
-      </form>
-      
-    </div>
-  </section>
-
-  <div class="learn-more-container">
-    <a href="about.html" class="learn-more">Learn More</a>
-  </div>
   
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <h2>Client Testimonials</h2>
+
+  <div class="testimonial-grid">
+    <div class="testimonial">
+      "Very professional and discreet!"
+    </div>
+
+    <div class="testimonial">
+      "Fast and effective service!"
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="cta-box">
+    <div>
+      <h2>Protect your space — without the noise.</h2>
+    </div>
+    <a class="btn-primary">Get a Free Quote</a>
+  </div>
+</section>
  <footer class="main-footer">
  
   <div class="footer-accreditations">
