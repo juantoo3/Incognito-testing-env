@@ -817,10 +817,10 @@
 	
 	.section-tag{
 	  color: #4474BB;
-	  font-weight: 700;
+	  font-weight: 900;
 	  letter-spacing: 2px;
 	  margin-bottom: 10px;
-	  font-size: 14px;
+	  font-size: 18px;
 	}
 	
 	.social-header h2{
@@ -832,7 +832,7 @@
 	.social-header p{
 	  max-width: 700px;
 	  margin: auto;
-	  color: #555;
+	  color: #4474BB;
 	  line-height: 1.7;
 	}
 	
