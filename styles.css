@@ -85,53 +85,64 @@
        HEADER
     ======================== */
     header {
-     position: relative;
-   
-     width: 100%;
-     min-height: 520px;
-   
-     display: flex;
-     align-items: center;
-     justify-content: center;
-   
-     padding: 100px 20px 70px;
-   
-     text-align: center;
-   
-     z-index: 2;
-   }
-   
-   .header-hero {
-     width: min(900px, 100%);
-     margin: auto;
-   }
-   
-   .site-logo {
-     width: 200px;
-     margin: 0 auto 24px;
-   }
-   
-   .header-hero h1 {
-     margin: 0 0 14px;
-   
-     font-size: clamp(36px, 5vw, 58px);
-     line-height: 1.08;
-     font-weight: 800;
-     letter-spacing: -1.5px;
-   
-     color: var(--primary);
-   }
-   
-   .header-subtitle {
-     max-width: 700px;
-     margin: 0 auto;
-   
-     font-size: clamp(18px, 2.2vw, 25px);
-     font-weight: 400;
-   
-     color: var(--text-muted);
-     line-height: 1.5;
-   }
+	  position: relative;
+	
+	  width: 100%;
+	  min-height: 520px;
+	
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	
+	  padding: 100px 20px 70px;
+	
+	  text-align: left;
+	
+	  z-index: 2;
+	}
+	
+	.header-hero {
+	  width: min(1100px, 100%);
+	  margin: auto;
+	
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  gap: 40px;
+	}
+	
+	.site-logo {
+	  width: 200px;
+	  flex-shrink: 0;
+	}
+	
+	.header-text {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	}
+	
+	.header-hero h1 {
+	  margin: 0 0 14px;
+	
+	  font-size: clamp(36px, 5vw, 58px);
+	  line-height: 1.08;
+	  font-weight: 800;
+	  letter-spacing: -1.5px;
+	
+	  color: var(--primary);
+	}
+	
+	.header-subtitle {
+	  max-width: 700px;
+	  margin: 0;
+	
+	  font-size: clamp(18px, 2.2vw, 25px);
+	  font-weight: 400;
+	
+	  color: var(--text-muted);
+	  line-height: 1.5;
+	}
 
 
       /* =======================
