@@ -6,50 +6,97 @@
   <meta name="description" content="Incognito Pest Control provides safe and effective residential and commercial pest control services. Protect your home or business from ants, rodents, termites, and more.">
   <title>Incognito Pest Control Services</title>
   <link rel="icon" type="image/png" href="assets/incog_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
   <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
 
+  <!-- Background -->
+  <div class="global-fluid-bg"></div>
+  
   <!-- LOADER -->
   <div id="loader">
     <img src="assets/incog_logo.png" alt="Incognito Pest Control Logo">
   </div>
 
-  <!-- Background -->
-  <div class="global-fluid-bg"></div>
-  
   <!-- Navigation -->
-  <nav id="mainNav" class="navbar">
+  <nav class="navbar">
+
     <div class="nav-container">
   
       <a href="index.html" class="nav-logo">
-        <img src="assets/incog_logo.png" alt="Incognito Pest Control">
+        <img src="incog_logo.png" alt="Incognito Pest Control">
       </a>
   
-      <!-- Mobile Menu Button -->
-      <div class="menu-toggle" id="menuToggle">
+      <button
+        class="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
         ☰
-      </div>
+      </button>
   
-      <ul class="nav-links" id="navLinks">
-        <li><a href="/about.html">About</a></li>
+      <ul class="nav-links">
+  
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+  
+        <li>
+          <a href="about.html">About</a>
+        </li>
   
         <li class="dropdown">
-          <a href="javascript:void(0)">Services ▾</a>
+          <a href="#">Services</a>
+  
           <ul class="dropdown-menu">
-            <li><a href="services/residential.html">Residential</a></li>
-            <li><a href="services/commercial.html">Commercial</a></li>
-            <li><a href="services/rodent.html">Rodent</a></li>
-            <li><a href="services/termite.html">Termite</a></li>
+            <li>
+              <a href="services/residential.html">
+                Residential
+              </a>
+            </li>
+  
+            <li>
+              <a href="services/commercial.html">
+                Commercial
+              </a>
+            </li>
+  
+            <li>
+              <a href="services/rodent.html">
+                Rodent Control
+              </a>
+            </li>
+  
+            <li>
+              <a href="services/termite.html">
+                Termite Control
+              </a>
+            </li>
           </ul>
         </li>
   
-        <li><a class="cta-btn" href="#contact">Get a free Quote</a></li>
+        <li>
+          <a href="index.html#contact">Contact</a>
+        </li>
+  
+        <li>
+          <a href="#contact" class="cta-btn">
+            Get a Quote
+          </a>
+        </li>
+  
       </ul>
   
     </div>
+  
   </nav>
   
    <!-- HEADER -->
@@ -81,46 +128,53 @@
   
    <!-- SERVICES -->
   <section class="services-section">
-    <div class="services-title">Our Services</div>
 
+    <h2 class="services-title">Our Services</h2>
+  
     <div class="services-grid">
-
+  
       <a href="services/residential.html" class="service-link">
         <div class="service-card front-residential">
-        	<h3 class="service-title">Residential Pest Control</h3>
-          <div class="service-overlay"></div>
+          <div class="service-overlay">
+            <h3 class="service-title">
+              Residential Pest Control
+            </h3>
+          </div>
         </div>
       </a>
-
+  
       <a href="services/commercial.html" class="service-link">
         <div class="service-card front-commercial">
-            <h3 class="service-title">Commercial Pest Control</h3>
-          <div class="service-overlay"></div>
+          <div class="service-overlay">
+            <h3 class="service-title">
+              Commercial Pest Control
+            </h3>
+          </div>
         </div>
       </a>
-
+  
       <a href="services/rodent.html" class="service-link">
         <div class="service-card front-rodent">
-            <h3 class="service-title">Rodent Control</h3>
-          <div class="service-overlay"></div>
+          <div class="service-overlay">
+            <h3 class="service-title">
+              Rodent Control
+            </h3>
+          </div>
         </div>
       </a>
-
+  
       <a href="services/termite.html" class="service-link">
         <div class="service-card front-termite">
-            <h3 class="service-title">Termite Control</h3>
-          <div class="service-overlay"></div>
+          <div class="service-overlay">
+            <h3 class="service-title">
+              Termite Control
+            </h3>
+          </div>
         </div>
       </a>
-      
-      <a href="about.html#pests" class="service-link">
-        <div class="service-card front-general">
-            <h3 class="service-title">General Pest Control</h3>
-          <div class="service-overlay"></div>
-        </div>
-      </a>
-
+  
     </div>
+  
   </section>
 
     <!-- SOCIAL MEDIA UPDATES -->
@@ -410,13 +464,21 @@
     });
 
     //mobile nav
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
     
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("show-menu");
-    });  
-  
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener("click", () => {
+    
+        const isOpen = navLinks.classList.toggle("show-menu");
+    
+        menuToggle.setAttribute(
+          "aria-expanded",
+          isOpen
+        );
+    
+      });
+    }
   </script>
 </body>
 </html>
