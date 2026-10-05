@@ -295,6 +295,20 @@
           font-size: 32px;
         }
 
+		.header-hero {
+	    flex-direction: column;
+	    text-align: center;
+	    gap: 20px;
+	    }
+	
+	  .header-text {
+	    align-items: center;
+	    }
+	
+	  .site-logo {
+	    width: 160px;
+   	  }
+
         .service-card {
           height: 100px;
         }
